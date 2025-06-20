@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arnav Garg - Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Loader -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-rings">
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+      </div>
+      <p class="loader-text">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="nav-brand">
+          <a href="#home">Arnav Garg</a>
+        </div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Internships</a>
+          <a href="#portfolio" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-controls">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="hero-particles"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hero-greeting">Hello, I'm</span>
+          <span class="hero-name">Arnav Garg</span>
+          <span class="hero-role">Frontend Developer</span>
+        </h1>
+        <p class="hero-description">
+          Motivated and detail-oriented second-year B.Tech CSE student at UPES,specializing in AI/ML. Strong foundation in Python,C++, and front-end development using React.js,HTML, and CSS. Experienced in building responsive web applications and leading development efforts during hackathons.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn--primary btn--lg ripple-effect" onclick="scrollToSection('portfolio')">
+            View My Work
+          </button>
+          <button class="btn btn--outline btn--lg ripple-effect" onclick="scrollToSection('contact')">
+            Get In Touch
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Driven CS student and Full Stack Developer</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <div class="card animate-on-scroll">
+            <div class="card__body">
+              <h3>Frontend Developer & Full Stack Intern</h3>
+              <p>I specialize in React, Next.js, MongoDB, and Tailwind CSS. I enjoy building applications that are fast, clean, and easy to use.</p>
+              <p>My goal is to craft seamless and scalable solutions while constantly improving my skills in both frontend and backend technologies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="skills-section">
+          <h3>Skills</h3>
+          <div class="skills-grid">
+            <span>React</span><span>MongoDB</span><span>Node.js</span><span>Tailwind CSS</span>
+            <span>JavaScript</span><span>Python</span><span>Flask</span><span>C/C++</span><span>Java</span>
+            <span>Figma</span><span>Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Internships</h2>
+        <p class="section-subtitle">Practical experiences and challenges</p>
+      </div>
+      <div class="services-grid">
+        <div class="card animate-on-scroll">
+          <div class="card__body">
+            <h3>Intern — RightWalk Foundation</h3>
+            <p>Helped in the backend development of EPInc.- AI Powered Platform </p>
+          </div>
+        </div>
+        <div class="card animate-on-scroll">
+          <div class="card__body">
+            <h3>Full Stack Intern — Unified Mentor</h3>
+            <p>Built dynamic dashboards and REST APIs for a Medicare portal using MERN stack. Focused on authentication and backend logic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Projects Section -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">Some of my favorite builds</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="card animate-on-scroll">
+        <div class="card__body">
+          <h3>Spotify-Style Music Player</h3>
+          <p>Built using React and Jamendo API, supports playlist browsing and music streaming.</p>
+        </div>
+      </div>
+      <div class="card animate-on-scroll">
+        <div class="card__body">
+          <h3>MediChat Chatbot</h3>
+          <p>An AI chatbot designed to help users understand medical prescriptions and scripts more clearly and easily.</p>
+        </div>
+      </div>
+      <div class="card animate-on-scroll">
+        <div class="card__body">
+          <h3>Weather App</h3>
+          <p>Weather forecast dashboard with real-time API and autocomplete location support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Let’s work on your next project together</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="card animate-on-scroll">
+            <div class="card__body">
+              <h3>Reach Out</h3>
+              <p>I’m available for freelance, internship, or collaboration. Let’s build something impactful!</p>
+              <div class="contact-details">
+                <div class="contact-item"><span class="contact-icon">📧</span> arnavgargdark@gmail.com</div>
+                <div class="contact-item"><span class="contact-icon">📱</span> +91 9453833395</div>
+                <div class="contact-item"><span class="contact-icon">🌍</span> Lucknow, India</div>
+              </div>
+              <div class="social-links">
+                <a href="https://github.com/ArnavGarg7" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/arnav-garg-544917341/" class="social-link">LinkedIn</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full-width ripple-effect">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Arnav Garg. All rights reserved.</p>
+        <p>Built with passion and modern web technologies</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
